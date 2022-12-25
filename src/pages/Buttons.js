@@ -23,6 +23,14 @@ export default function Buttons() {
         hover:border-4 hover:tracking-[1.8px] hover:rounded-md hover:font-bold`}>
          stretch effect
       </ButtonBase>
+      <ButtonBase className={`relative text-purple-800 linear duration-300 border-2 border-purple-800
+        before:absolute before:w-full before:h-full before:z-10 before:bg-purple-900/80
+        before:top-0 before:left-0 before:translate-y-[-100%] before:origin-bottom-left before:text-white 
+        before:content-center before:flex before:justify-center before:items-center
+        before:content-["Done!"] before:linear before:duration-300 before:delay-75 hover:before:translate-y-0
+        hover:text-white hover:rounded-md`}>
+         slide from top
+      </ButtonBase>
     </main>
   )
 }
