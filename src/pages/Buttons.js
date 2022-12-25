@@ -19,6 +19,10 @@ export default function Buttons() {
         before:linear before:duration-300 before:delay-75 hover:before:translate-x-0 hover:text-white hover:rounded-md`}>
          slide effect
       </ButtonBase>
+      <ButtonBase className={`relative tracking-tighter text-purple-800 linear duration-300 border-2 border-purple-800
+        hover:border-4 hover:tracking-[1.8px] hover:rounded-md hover:font-bold`}>
+         stretch effect
+      </ButtonBase>
     </main>
   )
 }
