@@ -2,6 +2,7 @@ import { useCallback, createElement } from "react"
 
 export const ButtonBase = ({ children, onClick, as, ...props}) => {
 
+  const defaultBtnStyles = "whitespace-nowrap cursor-pointer uppercase px-6 py-4"
   const handleClick = useCallback((e) => {
     //post button click
     // e.target.dataset.name
@@ -12,14 +13,14 @@ export const ButtonBase = ({ children, onClick, as, ...props}) => {
     return (
       createElement(
         as,
-        {...props, className: `whitespace-nowrap cursor-pointer ${props.className}`, onClick: handleClick},
+        {...props, className: `${defaultBtnStyles} ${props.className}`, onClick: handleClick},
         children
       )
     )
   }
   return (
     <button {...props} 
-      className={`whitespace-nowrap cursor-pointer ${props.className}`}
+      className={`${defaultBtnStyles} ${props.className}`}
       onClick={handleClick}>
       {children}
     </button> 

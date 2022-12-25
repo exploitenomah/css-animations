@@ -8,7 +8,9 @@ export default function Layout ({
   return (
     <>
     <Header />
-      {children}
+      <div className="px-8 py-6">
+        {children}
+      </div>
     <Footer />
     </>
   )
