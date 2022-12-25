@@ -31,6 +31,13 @@ export default function Buttons() {
         hover:text-white hover:rounded-md`}>
          slide from top
       </ButtonBase>
+      <ButtonBase className={`relative text-purple-800 linear duration-300 border-2 border-purple-800
+        before:absolute before:h-[500px] before:w-1/5 before:z-10 before:bg-white
+        before:top-0 before:left-0 before:translate-y-0 before:rotate-[-45deg]
+        before:linear before:duration-500 hover:before:translate-y-[-100%] hover:before:rotate-[-45deg]
+        hover:text-white hover:bg-purple-900/80`}>
+         glow effect
+      </ButtonBase>
     </main>
   )
 }
