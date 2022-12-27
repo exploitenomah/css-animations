@@ -91,6 +91,21 @@ export default function Buttons() {
         pseudo={"layer swapping"}>
          layer swapping
       </ButtonBase>
+      <ButtonBase className={`relative text-purple-800 bg-transparent linear duration-300 overflow-visible
+        before:w-4 before:h-4 before:rounded-full before:absolute before:top-[50%] before:left-0 before:translate-y-[-50%]
+        before:linear before:duration-300 before:opacity-0 before:-z-10 
+        before:bg-purple-800 before:text-purple-800 before:shadow-[-30px_0px_0px_0px_currentColor]
+        after:w-4 after:h-4 after:rounded-full after:absolute after:right-0 after:top-[50%] after:translate-y-[-50%]
+        after:linear after:duration-300 after:opacity-0 after:-z-10
+        after:bg-purple-800 after:shadow-[30px_0px_0px_0px_currentColor]
+        [&>span]:scale-0 hover:text-white hover:before:text-purple-800/80 hover:after:text-purple-800/80 
+        hover:before:left-[50%] hover:before:translate-x-[-50%]
+        hover:after:left-[50%] hover:after:translate-x-[-50%] hover:after:bg-purple-transparent
+        hover:after:opacity-100 hover:before:opacity-100 [&>span]:hover:scale-100 [&>span]:hover:opacity-100
+        `}>
+         circles to bg
+         <span className="block bg-purple-900/80 absolute w-full h-full -z-10 top-0 left-0 linear duration-300 opacity-0 delay-[400ms] "></span>
+      </ButtonBase>
     </main>
   )
 }
