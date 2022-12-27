@@ -66,6 +66,18 @@ export default function Buttons() {
         hover:text-white hover:before:h-[200%]`}>
          circular bg effect
       </ButtonBase>
+      <ButtonBase className={`relative text-purple-800 bg-transparent linear duration-[400ms] font-bold border-purple-800
+       border-2 before:absolute before:top-0 before:left-0 before:origin-top before:content-center before:rotate-x-270 
+       before:content-[attr(pseudo)] before:flex
+       before:items-center before:justify-center before:ease-linear before:duration-[400ms]
+       before:w-full before:h-full before:bg-purple-800 before:text-white
+       after:absolute after:top-0 after:left-0 after:origin-top after:content-center after:rotate-x-270 
+       after:content-[attr(pseudo)] after:flex
+       after:items-center after:justify-center after:ease-linear after:duration-[400ms]
+       after:w-full after:h-full after:bg-fuchsia-600/80 after:text-white after:delay-[200ms]
+       hover:before:rotate-x-0 hover:after:rotate-x-0`} pseudo={"Layers!"}>
+         Layers!
+      </ButtonBase>
     </main>
   )
 }
