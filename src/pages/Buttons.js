@@ -50,6 +50,16 @@ export default function Buttons() {
         pseudo={"Swapping Effect!"}>
           Swapping Effect!
       </ButtonBase>
+      <ButtonBase 
+        pseudo={"text scaling effect"}
+        className={`relative text-purple-800 linear duration-300 border-2 border-purple-800
+        font-bold before:absolute before:h-full before:w-full before:z-10 before:bg-transparent 
+        before:flex before:justify-center before:items-center before:text-transparent
+        before:top-0 before:left-0 before:scale-[3] before:content-[attr(pseudo)] 
+        before:linear before:duration-500 hover:before:scale-100 hover:before:bg-purple-800
+        hover:text-transparent hover:before:text-white`}>
+         text scaling effect
+      </ButtonBase>
     </main>
   )
 }
