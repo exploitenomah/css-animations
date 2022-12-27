@@ -60,6 +60,12 @@ export default function Buttons() {
         hover:text-transparent hover:before:text-white`}>
          text scaling effect
       </ButtonBase>
+      <ButtonBase className={`relative text-purple-800 bg-transparent linear duration-300 border-2 border-purple-800
+        before:absolute before:h-[0%] before:w-full before:z-[-1] before:bg-purple-900/80 before:rounded-b-[50%]
+        before:top-0 before:left-0 before:linear before:duration-500
+        hover:text-white hover:before:h-[200%]`}>
+         circular bg effect
+      </ButtonBase>
     </main>
   )
 }
