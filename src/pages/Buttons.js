@@ -38,6 +38,18 @@ export default function Buttons() {
         hover:text-white hover:bg-purple-900/80`}>
          glow effect
       </ButtonBase>
+      <ButtonBase className={`relative text-transparent linear duration-300 border-2 border-black 
+        before:top-0 before:left-0 before:translate-y-0 before:linear before:duration-500 after:linear after:duration-500  
+        before:absolute before:h-full before:w-full before:z-10 before:bg-purple-800/80 before:flex
+        before:content-center before:justify-center before:items-center before:text-white before:content-[attr(pseudo)]
+        after:flex after:content-center after:justify-center after:items-center after:text-white
+        after:content-[attr(pseudo)] after:translate-y-[100%] after:top-0 after:left-0 
+        after:translate-x-[-100%] after:absolute after:w-full after:h-full after:z-10 
+        after:bg-purple-800/80 hover:before:translate-x-[100%] hover:before:translate-y-[-100%]
+         hover:after:translate-x-0 hover:after:translate-y-0`}
+        pseudo={"Swapping Effect!"}>
+          Swapping Effect!
+      </ButtonBase>
     </main>
   )
 }
