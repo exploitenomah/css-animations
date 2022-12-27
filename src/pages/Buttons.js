@@ -53,7 +53,7 @@ export default function Buttons() {
       <ButtonBase 
         pseudo={"text scaling effect"}
         className={`relative text-purple-800 linear duration-300 border-2 border-purple-800
-        font-bold before:absolute before:h-full before:w-full before:z-10 before:bg-transparent 
+        before:absolute before:h-full before:w-full before:z-10 before:bg-transparent 
         before:flex before:justify-center before:items-center before:text-transparent
         before:top-0 before:left-0 before:scale-[3] before:content-[attr(pseudo)] 
         before:linear before:duration-500 hover:before:scale-100 hover:before:bg-purple-800
@@ -66,7 +66,7 @@ export default function Buttons() {
         hover:text-white hover:before:h-[200%]`}>
          circular bg effect
       </ButtonBase>
-      <ButtonBase className={`relative text-purple-800 bg-transparent linear duration-[400ms] font-bold border-purple-800
+      <ButtonBase className={`relative text-purple-800 bg-transparent linear duration-[400ms] border-purple-800
        border-2 before:absolute before:top-0 before:left-0 before:origin-top before:content-center before:rotate-x-270 
        before:content-[attr(pseudo)] before:flex
        before:items-center before:justify-center before:ease-linear before:duration-[400ms]
