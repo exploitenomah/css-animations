@@ -1,14 +1,26 @@
 /** @type {import('tailwindcss').Config} */
 const plugin = require('tailwindcss/plugin')
 
-// Rotate X utilities
 const rotateX = plugin(function ({ addUtilities }) {
   addUtilities({
     '.rotate-x-0': { 
-      transform: 'rotateX(0deg)',
+      transform: 'translate(var(--tw-translate-x), var(--tw-translate-y)) rotateX(0deg) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))',
     },
     '.rotate-x-270': {
-      transform: 'rotateX(270deg)',
+      transform: 'translate(var(--tw-translate-x), var(--tw-translate-y)) rotateX(270deg) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))',
+    },
+    '.rotate-x-360': {
+      transform: 'translate(var(--tw-translate-x), var(--tw-translate-y)) rotateX(360deg) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))',
+    },
+  })
+})
+const rotateY = plugin(function ({ addUtilities }) {
+  addUtilities({
+    '.rotate-y-0': { 
+      transform: 'translate(var(--tw-translate-x), var(--tw-translate-y)) rotateY(0deg) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)))',
+    },
+    '.rotate-y-360': {
+      transform: 'translate(var(--tw-translate-x), var(--tw-translate-y)) rotateY(360deg) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))',
     },
   })
 })
@@ -19,5 +31,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [rotateX],
+  plugins: [rotateX, rotateY],
 }
