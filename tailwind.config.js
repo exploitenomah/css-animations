@@ -12,6 +12,15 @@ const rotateX = plugin(function ({ addUtilities }) {
     '.rotate-x-360': {
       transform: 'translate(var(--tw-translate-x), var(--tw-translate-y)) rotateX(360deg) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))',
     },
+    '.rotate-x-180': {
+      transform: 'translate(var(--tw-translate-x), var(--tw-translate-y)) rotateX(180) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))',
+    },
+    '.rotate-perspective-neg-75': {
+      transform: 'translate(var(--tw-translate-x), var(--tw-translate-y)) perspective(800px) rotateX(-75deg) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))',
+    },
+    '.rotate-perspective-pos-75': {
+      transform: 'translate(var(--tw-translate-x), var(--tw-translate-y)) perspective(800px) rotateX(75deg) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))',
+    },
   })
 })
 const rotateY = plugin(function ({ addUtilities }) {
