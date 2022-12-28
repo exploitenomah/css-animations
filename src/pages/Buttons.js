@@ -106,6 +106,19 @@ export default function Buttons() {
          circles to bg
          <span className="block bg-purple-900/80 absolute w-full h-full -z-10 top-0 left-0 linear duration-300 opacity-0 delay-[400ms] "></span>
       </ButtonBase>
+      <ButtonBase className={`relative text-white bg-transparent linear duration-300 overflow-visible
+        before:w-full before:h-full before:absolute
+        before:linear before:duration-300 before:-z-10 before:mix-blend-multiply
+        before:bg-purple-800 before:top-[-3px] before:left-[-3px] before:origin-top
+        after:w-full after:h-full after:absolute
+        after:linear after:duration-300 after:-z-10 
+        after:bg-red-800 after:bottom-[-3px] after:right-[-3px] after:mix-blend-multiply
+        hover:text-purple-900 after:origin-bottom
+        hover:after:rotate-perspective-neg-75 hover:before:rotate-perspective-pos-75 hover:before:top-[-6px]
+        hover:before:left-0 hover:after:bottom-[-6px] hover:after:right-0 
+        `}>
+         window effect...
+      </ButtonBase>
     </main>
   )
 }
